@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="css/register.css" th.href="@{css/register.css}">
+
+
+
+</head>
+<body>
+<form th:action="@{/savedetails}" th:object="${userData}" method="post" >
+    <div class="container">
+        <div class="name">
+            <label style="color: white">Full Name</label>
+            <input type="text" id="uname" name="fullName" th:field="*{fullName}" required>
+        </div>
+        <div class="email">
+            <label style="color: white">Email</label>
+            <input type="email" id="email" name="email"   th:field="*{email}"  size="30" required>
+        </div>
+        <div class="number">
+            <label style="color: white">Phone Number</label>
+            <input type="number" id="num" name="mobile" th:field="*{mobile}" required>
+        </div>
+        <div class="password">
+            <label style="color: white">Password</label>
+            <input type="password" id="psw" name="password" th:field="*{password}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup()='check()' required>
+        </div>
+<!--        <div class="cnf-password">-->
+<!--            <label style="color: white">Confirm Password</label>-->
+<!--            <input type="password" id="cnf-psw" name="password2" onkeyup='check();' required>-->
+<!--            <span id='message'></span>-->
+<!--        </div>-->
+
+        <div class="btn">
+            <input type="submit" name="reg" id="reg" value="Register" style="font-weight:bold;">
+        </div>
+    </div>
+</form>
+</body>
+
+</html>

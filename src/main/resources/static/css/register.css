@@ -1,0 +1,57 @@
+body {
+    background: url("../quiz.png");
+    background-size: 1600px 800px;
+}
+.container {
+    width: 400px;
+    overflow: hidden;
+    background-color: black;
+    opacity: .6;
+    margin-top: 70px;
+    margin-right: 600px;
+    padding: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border: 2px solid white;
+}
+.name , .email , .number , .password , .cnf-password {
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+
+}
+#uname  , #email , #num , #psw , #cnf-psw {
+    width: 300px;
+    height: 30px;
+    padding: 15px;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: white;
+    color: white;
+
+}
+#reg {
+    background: transparent;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    padding-bottom: 8px;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+
+}
+#reg:hover {
+    background-color: #3e8e41;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}

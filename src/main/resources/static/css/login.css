@@ -1,0 +1,122 @@
+body {
+    background: url("../quiz.png") ;
+    background-size: 1600px 800px;
+}
+::placeholder {
+    color: white;
+    opacity: .4;
+    font-family: 'Yanone Kaffeesatz';
+}
+.container {
+    width: 400px;
+    overflow: hidden;
+    opacity: .6;
+    margin-top: 110px;
+    margin-right: 600px;
+    padding: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border: 2px solid white;
+}
+.new {
+    background: transparent;
+    opacity: .6;
+    display: flex;
+    border:2px solid white;
+    margin-top: 20px;
+    margin-left: 537px;
+    width: 400px;
+    padding: 30px;
+}
+.email , .password {
+    padding: 10px;
+    margin: 8px;
+
+}
+
+#psw , #email{
+    width: 300px;
+    height: 30px;
+    padding: 15px;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: white;
+    border-bottom-color: white;
+    color: white;
+    font-size: 17px;
+}
+.email:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.password:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+#log {
+    background: transparent;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    font-size: 17px;
+    color: white;
+    margin-left: 100px;
+    padding: 10px;
+    padding-bottom: 8px;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+
+}
+#log:hover {
+    background-color: #3e8e41;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.forgot {
+    padding: 8px;
+    margin-top: 8px;
+}
+#forgot {
+    color: white;
+    font-size: 19px;
+    text-decoration-color: red;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+
+}
+#new-user {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Yanone Kaffeesatz';
+}
+#reg {
+    background: transparent;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    font-size: 18px;
+    color: white;
+    margin-left: 30px;
+    padding: 16px;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+}
+#reg:hover {
+  background-color: #3e8e41;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}

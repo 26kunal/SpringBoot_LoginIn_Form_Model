@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <title>Diary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="/css/login.css" th:href="@{/css/login.css}">
+</head>
+<body>
+in login
+<form action="${pageContext.request.contextPath}/loginServlet" id="form1" name="login-form" method="get" enctype="multipart/form-data">
+    <div class="container">
+        <div class="email">
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+        </div>
+        <div class="password">
+            <input type="password" name="pass" placeholder="Enter Password" id="psw" required>
+        </div>
+        <div class="btn">
+            <input type="submit" onclick="login()" name="log" id="log" value="LogIn" style="font-weight:bold;">
+        </div>
+    </div>
+</form>
+<div class="new">
+    <p id="new-user">New Here ?</p>
+    <div class="reg">
+        <input type="submit" name="reg" id="reg" onclick="location.href='register'" value="Register Here" style="font-weight:bold;">
+    </div>
+</div>
+
+</body>
+</html>
